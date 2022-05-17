@@ -1,0 +1,342 @@
+/* CSS files add styling rules to  ALL your content */
+
+body {
+  font-family: helvetica, arial, sans-serif,;
+  margin: 2em;
+  background-image: url("https://cdn.glitch.com/6e58a550-b55e-45c0-8270-6b5edb8676e8%2Fpurpcloud.png?v=1626772228356");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align:left;
+  color: white;
+  font-size: 4.0em;
+  font-family: monospace;
+}
+
+p {
+  test-align = left;
+  color: white;
+  font-size: 1.25em;
+}
+
+/* Styling the Nav Bar by selecting the u1, li, and li a elements*/
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  background-color: transparent;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+nav ul li a {
+  color: white;
+  display:block;
+  text-decoration: none;
+  text-align: left;
+  padding: 8px 25px; 
+  font-size: 1.0em;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+nav li a:hover {
+  color: indigo;
+  background-color: lavender;
+}
+
+nav ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: lavender;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+nav ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+    }
+nav ul li ul.dropdown li {
+        display: block;
+    }
+
+/* styling of the home page */
+
+
+#home-image {
+  /* TODO: Add own background image */
+  /* insert image link to change background image in url(...) */
+    
+  background-image: url(https://cdn.glitch.com/6e58a550-b55e-45c0-8270-6b5edb8676e8%2Fbridge.jpg?v=1626646761940);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*
+
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('https://cdn.glitch.com/6e58a550-b55e-45c0-8270-6b5edb8676e8%2Fthumbnails%2Fbridge.jpg?1626646761940');
+        background-size: cover;
+    }
+}
+
+*/
+
+.home-type {
+  
+}
+
+
+#home-header {
+  width: 14ch;
+  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 5.5em;
+  color:white;
+}
+
+#home-paragraph {
+   width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.85em;
+  color:white;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+/* styling of the about-me page */
+
+
+#about-me-elements{
+    position:relative; /* constrain absolutely positioned child elements */
+}
+
+#about-me-self {
+  float:left; /* Float the first element */
+  margin-left:30px;
+  border: 3px solid black;
+  height: 391.5px; 
+  width:261px;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+} 
+
+#about-me-paragraph {
+  margin: 0 auto; /* Center the second element */
+  border: 3px solid black;
+  background-color: transparent;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  text-align:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:450px;
+  margin-right:450px;
+}
+
+#about-me-music {
+  position:absolute;
+  top:0;
+  right:30px; 
+  box-shadow: -5px -5px 30px 5px palegreen, 5px 5px 30px 5px lime;
+  height: 391.5px; 
+  width:261px;
+}
+
+
+
+#about-me-header {
+  text-align:left;
+  color: white;
+  font-size: 4.0em;
+  font-family: monospace;
+}
+
+/* styling of the hobbies page */
+
+#hobbies-image {
+  float: right;
+}
+
+#hobbies-paragraph {
+  font-color: white;
+}
+
+/* styling of portfolio page */
+
+
+
+/* styling of monopoly page */
+
+#monopoly-paragraph{
+  color:white; 
+  font-weight:bold;
+  text-align:left;
+}
+
+#monopoly-header{
+  text-align:left;
+  color: white;
+  font-size: 4.0em;
+  font-family: monospace;
+}
+
+#monopoly-body {
+  padding-right:100px; 
+}
+
+/* styling of basketball page */
+
+#basketball-header{
+  text-align:left;
+  color: white;
+  font-size: 4.0em;
+  font-family: monospace;
+}
+
+#basketball-video{
+  float:left;
+  margin-left:30px;
+  width: 550.25px;
+  height: 309.5px;
+  box-shadow: -5px -5px 30px 5px #ffe6ea, 5px 5px 30px 5px deeppink;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#basketball-video-caption{
+  margin-top:15px;
+  color:white;
+}
+
+/*
+
+#basketball-photo-caption{
+  margin-top:15px;
+  color:white;
+  float:right;
+}
+
+*/
+
+/* slideshow styling */ 
+.basketball-container {
+  float:right;
+  margin-right:30px;
+  width: 464px;
+  height: 309.5px;
+  overflow: hidden;
+  position: relative;
+   box-shadow: -5px -5px 30px 5px lavender, 5px 5px 30px 5px darkviolet;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.basketball-photo {
+  width: 464px;
+  height: 309.5px; 
+  position: absolute;
+  animation: round 20s infinite;
+  opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+-webkit-@keyframes round {
+  25% {
+    opacity: 1;
+    -webkit-opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-opacity: 0;
+  }
+}
+
+img:nth-child(1) {
+  animation-delay: 16s;
+}
+ 
+img:nth-child(2) {
+  animation-delay: 12s;
+}
+ 
+img:nth-child(3) {
+  animation-delay: 8s;
+}
+ 
+img:nth-child(4) {
+  animation-delay: 4s;
+}
+
+img:nth-child(5) {
+  animation-delay: 0s;
+}
+
